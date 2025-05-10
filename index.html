@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Selecciona un Cilindro</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      color: #334e68;
+      margin-bottom: 40px;
+      font-size: 2rem;
+    }
+
+    .button-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      background-color: #486581;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .btn:hover {
+      background-color: #243b53;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+
+      .button-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Selecciona el tipo de cilindro</h1>
+  <div class="button-container">
+    <a href="https://excel.cloud.microsoft/open/onedrive/?docId=D1040CE18886663%21s5937d24d4be64cf399ee45c1975a03a2&driveId=0D1040CE18886663" class="btn" target="_blank">Cilindro Grande</a>
+    <a href="https://excel.cloud.microsoft/open/onedrive/?docId=D1040CE18886663%21se8f0202c77ee4beabe32c686662e33bd&driveId=0D1040CE18886663" class="btn" target="_blank">Cilindro Mediano</a>
+    <a href="https://excel.cloud.microsoft/open/onedrive/?docId=D1040CE18886663%21safe8c808b4b14b1aa73aebdc6a3079af&driveId=0D1040CE18886663" class="btn" target="_blank">Cilindro Pequeño</a>
+  </div>
+</body>
+</html>
